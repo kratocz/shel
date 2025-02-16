@@ -1,5 +1,7 @@
 # Shell Handy Examples for Linux (SHEL)
 
+Goal: "To became your handbook for often small tasks"
+
 A bunch of Markdown and script files with handy code snippets for Linux shell users.
 
 * ✓ References to trusted sources
