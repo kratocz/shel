@@ -55,19 +55,22 @@ set -euo pipefail
 ```
 
 Explanation:
+
 * `#!/usr/bin/env bash` … use also for `sh`, `php`, `python3`, …; makes the script compatible with strange Linuxes, BSD, macOS, …
 * `set -e` … exit on error (any non-zero command return code)
 * `set -u` … treat unset variables as an error (typos prevention)
 * `set -o pipefail` … fail on first error in pipelines (e.g. `cat non-existing-file | head -n 2 | tail -n 1` will fail)
 
 References:
+
+* https://man7.org/linux/man-pages/man1/set.1p.html
 * https://unix.stackexchange.com/questions/240749/bash-script-best-practice
 
 ### Rescue Linux boot from a live Linux
 
 ```shell
 mkdir /target
-mount </dev/...> /target
+mount /dev/... /target
 cd /target
 mount -t proc /proc proc
 mount --rbind /sys sys
@@ -79,5 +82,6 @@ You can download this script and place it to the root directory of your OS to ma
 
 
 References:
+
 * https://superuser.com/questions/165116/mount-dev-proc-sys-in-a-chroot-environment
 
