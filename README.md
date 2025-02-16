@@ -45,7 +45,7 @@ A bunch of Markdown and script files with handy code snippets for Linux shell us
 * [script best-practices](topics/script_best_practices.md) … `bash`, `python3`, …
 * [system boot rescue](topics/system_boot_rescue.md) … `mount --rbind`, `chroot`, `update-grub`, `update-initramfs -u`, `grub-install`, …
 
-## Authors favorite examples
+## Author's favorite examples
 
 ### First lines of the BASH script
 
